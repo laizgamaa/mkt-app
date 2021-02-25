@@ -1,0 +1,36 @@
+// Grid
+$grid-gutter: 0;
+$grid-columns: 12;
+$grid-max: 1600px;
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: $grid-max;
+	margin: 0 auto;
+}
+
+[class*="col-"] {
+	padding: 0 $grid-gutter;
+}
+
+@for $i from 1 through $grid-columns {
+	.col-#{$i} {
+		width: 100% / $grid-columns * $i;
+		@media (max-width: 480px) {
+			width: 100%;
+		}
+	}
+}
+
+@for $pr from 1 through $grid-columns {
+	.col-set-#{$pr} {
+		margin-right: 100% / $grid-columns * $pr;
+	}
+}
+
+@for $pl from 1 through $grid-columns {
+	.col-offset-#{$pl} {
+		margin-left: 100% / $grid-columns * $pl;
+	}
+}

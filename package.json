@@ -1,0 +1,50 @@
+{
+	"name": "mkt-app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint src --max-warnings=0",
+		"test": "jest",
+		"test:watch": "jest --watch"
+	},
+	"lint-staged": {
+		"src/**/*": [
+			"npm run lint --fix"
+		],
+		"src/**/*.test.js": [
+			"npm run test --findRelatedTests --bail"
+		]
+	},
+	"dependencies": {
+		"next": "9.5.3",
+		"next-pwa": "^3.1.3",
+		"react": "16.13.1",
+		"react-currency-formatter": "^1.1.0",
+		"react-dom": "16.13.1",
+		"react-hook-form": "^6.9.0",
+		"react-input-mask": "^2.0.4",
+		"react-multi-carousel": "^2.5.5",
+		"react-responsive-modal": "^5.1.1",
+		"sass": "^1.26.10",
+		"swr": "^0.3.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.11.1",
+		"@babel/preset-env": "^7.11.0",
+		"@testing-library/jest-dom": "^5.11.3",
+		"@testing-library/react": "^10.4.8",
+		"babel-jest": "^26.3.0",
+		"eslint": "^7.7.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.0",
+		"husky": "^4.2.5",
+		"jest": "^26.4.1",
+		"lint-staged": "^10.2.11",
+		"prettier": "2.0.5"
+	}
+}

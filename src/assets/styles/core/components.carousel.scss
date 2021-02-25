@@ -1,0 +1,41 @@
+.courses-list-carousel{
+    .react-multiple-carousel__arrow--left{
+        left: 20px;
+        @media (max-width: 768px) {
+			left: 10px;
+		}
+    }
+    .react-multiple-carousel__arrow--right{
+        right: 20px;
+        @media (max-width: 768px) {
+			right: 10px;
+		}
+    }
+    .react-multiple-carousel__arrow{
+        min-width: 63px;
+        min-height: 63px;
+        background: #fff;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        @media (max-width: 768px) {
+			min-width: 43px;
+            min-height: 43px;
+		}
+        &:before {
+            font-size: 25px;
+            color: #444;
+            font-weight: bold;
+        }
+    }
+    .carousel{
+        margin: 4rem 0;
+        @media (max-width: 768px) {
+			margin: 2rem 0;
+		}
+        .course{
+            margin: 0 3.25rem;
+            @media (max-width: 1600px) {
+                margin: 0 10%;
+            }
+        }
+    }
+}

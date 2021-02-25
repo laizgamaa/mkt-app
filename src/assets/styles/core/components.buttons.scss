@@ -1,0 +1,266 @@
+// button {
+// 	&[disabled] {
+// 		opacity: 0.4;
+// 		filter: grayscale(1);
+// 		&:hover {
+// 			filter: grayscale(1);
+// 			cursor: default;
+// 			opacity: 0.4;
+// 		}
+// 	}
+// }
+
+// .btn {
+// 	text-align: center;
+// 	background: none;
+// 	border: none;
+// 	font-size: 1rem;
+// 	padding: 0.5rem 1rem;
+// 	font-weight: 500;
+// 	letter-spacing: 1px;
+// 	@include border-radius(0.15rem);
+// 	transition-duration: 0.5s;
+// 	&:hover {
+// 		cursor: pointer;
+// 		filter: saturate(95%) brightness(95%);
+// 	}
+// 	&.active {
+// 		&:hover {
+// 			cursor: default;
+// 			filter: saturate(100%) brightness(100%);
+// 		}
+// 	}
+// 	&.has-icon {
+// 		display: flex;
+// 		align-items: center;
+// 		.icon {
+// 			margin-right: 0.35rem;
+// 			font-size: 1.1rem;
+// 			-webkit-text-stroke: 0.03rem;
+// 			-moz-text-stroke: 0.03rem;
+// 			-o-text-stroke: 0.03rem;
+// 		}
+// 		&.end {
+// 			.icon {
+// 				margin-right: 0;
+// 				margin-left: 0.35rem;
+// 			}
+// 		}
+// 	}
+// }
+
+// // style
+// @each $style, $background-color, $font-color,
+// 	$border-color
+// 		in (default, $color-white-default, $color-blue-default, #e9e9e9),
+// 	(primary, $color-blue-default, $color-white-default, $color-blue-default),
+// 	(secondary, $color-grey-default, $color-white-default, $color-grey-default),
+// 	(success, $color-green-default, $color-white-default, $color-green-default),
+// 	(danger, $color-red-default, $color-white-default, $color-red-default),
+// 	(
+// 		warning,
+// 		$color-lightyellow-default,
+// 		$color-black-default,
+// 		$color-lightyellow-default
+// 	),
+// 	(
+// 		info,
+// 		$color-lightblue-default,
+// 		$color-white-default,
+// 		$color-lightblue-default
+// 	),
+// 	(light, $color-white-default, $color-black-default, $color-white-default),
+// 	(dark, $color-black-default, $color-white-default, $color-black-default)
+// {
+// 	.btn-#{$style} {
+// 		border: 0.15rem solid $border-color;
+// 		background: $background-color;
+// 		color: $font-color;
+// 		strong {
+// 			color: $font-color;
+// 		}
+// 	}
+// }
+
+// // size
+// @each $size, $font-size, $padding in (extra-small, $font-size-xs, 0.25rem 1rem),
+// 	(small, $font-size-sm, 0.35rem 1.25rem),
+// 	(medium, $font-size-md, 0.5rem 1.5rem), (big, $font-size-bg, 0.6rem 1.75rem),
+// 	(large, $font-size-lg, 0.75rem 2rem)
+// {
+// 	.btn-#{$size} {
+// 		font-size: $font-size;
+// 		padding: $padding;
+// 	}
+// }
+
+// // variations
+// .btn-outline {
+// 	background: none !important;
+// 	@each $style, $color in (primary, $color-grey-default),
+// 		(secondary, $color-yellow-default), (info, $color-lightblue-default),
+// 		(success, $color-green-default), (alert, $color-yellow-default),
+// 		(light, $color-white-default), (danger, $color-red-default)
+// 	{
+// 		&.btn-#{$style} {
+// 			background: none;
+// 			border: 0.15rem solid $color;
+// 			font-weight: 600;
+// 			color: $color;
+// 			&:hover {
+// 				background: rgba($color, 0.1) !important;
+// 			}
+// 		}
+// 	}
+// }
+
+// .btn-block {
+// 	width: 100%;
+// 	margin: 0.25rem 0;
+// 	font-weight: 700;
+// 	letter-spacing: 1px;
+// 	font-size: 0.9rem !important;
+// 	padding: 0.75rem;
+// 	border-radius: 0.15rem;
+// 	text-transform: uppercase;
+// }
+
+.btn{
+	padding: .75rem 2rem;
+	background: $color-white-default;
+	text-decoration: none;
+	color: $color-grey-default;
+	font-size: 1rem;
+	border-radius: .7rem;
+	display: inline-flex;
+	justify-content: center;
+	font-weight: 700;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	@include montserrat-regular;
+}
+.btn-form{
+	padding: .5rem 1rem;
+	background: $color-white-default;
+	text-decoration: none;
+	color: $color-grey-default;
+	font-size: 1rem;
+	border-radius: 20px;
+	display: inline-flex;
+	justify-content: center;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	@include montserrat-regular;
+}
+.btn-outline{
+	box-shadow: none;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	color: $color-white-default;
+	letter-spacing: 1px;
+	background: transparent;
+}
+.btn-dashed{
+	color: $color-grey-secondary;
+	padding: 0.2rem 0.5rem;
+	border-radius: 2px;
+	border: 1px dashed #B0B0B0;
+	text-decoration: none;
+	font-size: 0.9375rem;
+	cursor: pointer;
+	@include montserrat-regular;
+}
+.btn-dashed-danger{
+	color: $color-red-default;
+	font-weight: 400;
+	letter-spacing: 3px;
+	border: 1px dashed rgba(186, 54, 54, 0.51);
+}
+.btn-transparent{
+	background: transparent;
+}
+.btn-md{
+	font-size: 18px;
+}
+.btn-sm{
+	font-size: 14px;
+	padding: .5rem 2rem;
+}
+.btn-primary{
+	color: $color-blue-primary;
+}
+.btn-primary-reverse{
+	color: $color-white-default;
+	background: rgb(173, 110, 202);
+}
+.btn-primary-outline{
+	color: $color-blue-primary;
+	border: 2px solid rgba(37, 86, 152, .2);
+}
+.btn-success{
+	color: $color-green-primary;
+}
+.btn-success-reverse{
+	color: $color-white-default;
+	background: $color-green-primary;
+}
+.btn-danger{
+	color: $color-red-default;
+}
+.btn-danger-reverse{
+	color: $color-white-default;
+	background: $color-red-default;
+}
+.btn-play{
+	width: 0;
+	height: 0;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	position: absolute;
+	z-index: 2;
+	border-left: 55px solid $color-white-default;
+	background: none;
+	border-right: none;
+	cursor: pointer;
+}
+.btn-google{
+	position: relative;
+	background: #A74949;
+	padding-left: 3.5rem;
+	font-size: .9rem;
+	&:before{
+		content: "";
+		width: 20px;
+		height: 20px;
+		background: url(/google-icon.svg) no-repeat;
+		position: absolute;
+		background-position: center;
+		left: 0rem;
+		top: 50%;
+		transform: translateY(-50%);
+		border-right: 2px solid rgba(255, 255, 255, .15);
+		padding: 0.66rem;
+	}
+}
+.btn-facebook{
+	position: relative;
+	background: #3F6AA3;
+	padding-left: 3.5rem;
+	font-size: .9rem;
+	&:before{
+		content: "";
+		width: 20px;
+		height: 20px;
+		background: url(/facebook-icon.svg) no-repeat;
+		position: absolute;
+		background-position: center;
+		left: 0rem;
+		top: 50%;
+		transform: translateY(-50%);
+		border-right: 2px solid rgba(255, 255, 255, .15);
+		padding: 0.66rem;
+	}
+}

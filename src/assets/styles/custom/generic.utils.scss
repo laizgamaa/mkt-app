@@ -1,0 +1,33 @@
+.bg-black-default {
+	background: $color-black-default;
+}
+
+.bg-black-primary {
+	background: $color-black-primary;
+}
+
+.text-white {
+	color: $color-white-default;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.md-hidden {
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.sm-hidden {
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.xd-hidden {
+	@media (max-width: 480px) {
+		display: none;
+	}
+}

@@ -1,0 +1,19 @@
+@each $font-type, $font-size-lg, $font-size-md, $font-size-sm,
+	$font-size-xs in (h1, 2.75rem, 2.5rem, 2.25rem, 2rem),
+	(h2, 2.5rem, 2.25rem, 2rem, 1.75rem), (h3, 2.25rem, 2rem, 1.75rem, 1.5rem),
+	(h4, 2rem, 1.75rem, 1.5rem, 1.25rem), (h5, 1.75rem, 1.5rem, 1.25rem, 1rem),
+	(h6, 1.5rem, 1.3rem, 1.1rem, 0.9rem)
+{
+	#{$font-type} {
+		font-size: $font-size-lg;
+		@media (max-width: 1280px) {
+			font-size: $font-size-md;
+		}
+		@media (max-width: 1024px) {
+			font-size: $font-size-sm;
+		}
+		@media (max-width: 480px) {
+			font-size: $font-size-xs;
+		}
+	}
+}

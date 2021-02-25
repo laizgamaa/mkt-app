@@ -1,0 +1,36 @@
+.customOverlay {
+	z-index: 2001;
+}
+.customModal {
+	max-width: 800px;
+	width: 100%;
+	padding: 0;
+}
+.react-responsive-modal-closeButton {
+    cursor: pointer;
+    fill: #fff;
+    top: 1.7rem;
+    right: 1.5rem;
+}
+.modal-header {
+	color: #fff;
+	padding: 0.5rem 2rem;
+	margin-left: 0rem;
+	width: 100%;
+	background: #014881;
+	margin-top: 0;
+	box-sizing: border-box;
+}
+.modal-body {
+	padding: 1rem 2rem;
+	overflow-y: scroll;
+	max-height: 400px;
+	box-sizing: border-box;
+}
+.video-modal{
+	background: transparent;
+	box-shadow: none;
+	video{
+		width: 100%;
+	}
+}

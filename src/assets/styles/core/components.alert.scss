@@ -1,0 +1,51 @@
+.alert {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	color: #fff;
+	border-radius: 0;
+	font-size: 1rem;
+	@each $type, $bg-color, $border-color,
+		$font-color in (default, #fff, #fff, #404040),
+		(primary, #cce5ff, #b8daff, #004085),
+		(secondary, #e2e3e5, #d6d8db, #383d41),
+		(success, #caefd2, #c3e6cb, #2d693a), (error, #f8d7da, #f5c6cb, #721c24),
+		(warning, #fff3cd, #ffeeba, #856404), (info, #d1ecf1, #bee5eb, #0c5460),
+		(light, #fefefe, #fdfdfe, #818182), (dark, #d6d8d9, #c6c8ca, #1b1e21)
+	{
+		&.alert--#{$type} {
+			background: $bg-color;
+			border: 0.15rem solid $border-color;
+			color: $font-color;
+			p,
+			span,
+			a {
+				color: $font-color;
+			}
+			p {
+				margin-bottom: 0.5rem;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			a {
+				text-decoration: underline;
+				font-weight: 600;
+			}
+			&.close {
+				background: rgba($bg-color, 0.1);
+				border: 0.1rem solid rgba($border-color, 0.35);
+				color: $font-color;
+			}
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+		&.alert--outline {
+			&.alert--#{$type} {
+				background: none !important;
+				border: 0.1rem solid $font-color !important;
+				color: $font-color !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+// Margin
+@for $i from 1 through 20 {
+	.m-#{$i} {
+		margin: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.mt-#{$i} {
+		margin-top: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.mb-#{$i} {
+		margin-bottom: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ml-#{$i} {
+		margin-left: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.mr-#{$i} {
+		margin-right: 0.5rem * $i;
+	}
+}
+
+// Padding
+@for $i from 1 through 20 {
+	.p-#{$i} {
+		padding: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.pt-#{$i} {
+		padding-top: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.pb-#{$i} {
+		padding-bottom: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.pl-#{$i} {
+		padding-left: 0.5rem * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.pr-#{$i} {
+		padding-right: 0.5rem * $i;
+	}
+}

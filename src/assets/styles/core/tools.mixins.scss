@@ -1,0 +1,86 @@
+// // Font icon
+// @mixin disce-rotate($degrees, $rotation) {
+// 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+// 	-webkit-transform: rotate($degrees);
+// 	-moz-transform: rotate($degrees);
+// 	-ms-transform: rotate($degrees);
+// 	-o-transform: rotate($degrees);
+// 	transform: rotate($degrees);
+// }
+
+// @mixin disce-flip($horiz, $vert, $rotation) {
+// 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+// 	-webkit-transform: scale($horiz, $vert);
+// 	-moz-transform: scale($horiz, $vert);
+// 	-ms-transform: scale($horiz, $vert);
+// 	-o-transform: scale($horiz, $vert);
+// 	transform: scale($horiz, $vert);
+// }
+
+// // Border-radius
+// @mixin border-radius($radius) {
+// 	-webkit-border-radius: $radius;
+// 	-moz-border-radius: $radius;
+// 	-ms-border-radius: $radius;
+// 	border-radius: $radius;
+// }
+
+// @mixin bg-gradient($x, $y) {
+// 	background: $x; /* For browsers that do not support gradients */
+// 	background: -webkit-linear-gradient(
+// 		left top,
+// 		$x,
+// 		$y
+// 	); /* For Safari 5.1 to 6.0 */
+// 	background: -o-linear-gradient(
+// 		bottom right,
+// 		$x,
+// 		$y
+// 	); /* For Opera 11.1 to 12.0 */
+// 	background: -moz-linear-gradient(
+// 		bottom right,
+// 		$x,
+// 		$y
+// 	); /* For Firefox 3.6 to 15 */
+// 	background: linear-gradient(to bottom right, $x, $y); /* Standard syntax */
+// }
+
+// @mixin bg-cover($url) {
+// 	background: url($url) no-repeat center center fixed;
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// 	background-size: cover;
+// 	@media (max-width: 1024px) {
+// 		background: url($url) no-repeat center center;
+// 	}
+// }
+
+// @mixin filter($zindex, $opacity, $color1, $color2) {
+// 	&::after {
+// 		@include bg-gradient($color1, $color2);
+// 		content: "";
+// 		display: block;
+// 		width: 100%;
+// 		height: 100%;
+// 		left: 0;
+// 		top: 0;
+// 		position: absolute;
+// 		z-index: $zindex;
+// 		opacity: $opacity;
+// 	}
+// }
+
+// @mixin filter-border($zindex, $border-size, $border-type, $border-color) {
+// 	&::after {
+// 		border: $border-size $border-type $border-color;
+// 		content: "";
+// 		display: block;
+// 		width: 100%;
+// 		height: 100%;
+// 		left: 0;
+// 		top: 0;
+// 		position: absolute;
+// 		z-index: $zindex;
+// 	}
+// }

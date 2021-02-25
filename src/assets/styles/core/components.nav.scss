@@ -1,0 +1,36 @@
+.menu{
+	.menu-container{
+		position: absolute;
+		top: 0;
+		left: calc(-100% - 5.2rem);
+		background: #fff;
+		height: 100vh;
+		transition-duration: 2s;
+		z-index: 2001;
+		max-width: 500px;
+		width: 100%;
+	}
+	&.menu-active{
+		.menu-container{
+			left: 0;
+			transition-duration: .5s;
+		}
+		.header-mask{
+			opacity: 1;
+			visibility: visible;
+			transition-duration: .5s;
+		}
+	}
+	.categories{
+		a{
+			position: relative;
+			color: $color-white-default;
+			font-weight: 700;
+			padding: 1rem 2.5rem;
+			display: block;
+			margin-bottom: 1rem;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+	}
+}

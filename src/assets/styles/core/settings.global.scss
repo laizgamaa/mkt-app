@@ -1,0 +1,26 @@
+// normalize
+$body-font-size: 10px;
+
+// Font icon
+$disce-font-path: "/assets/fonts/" !default;
+$disce-font-size-base: 14px !default;
+$disce-css-prefix: cers-ui-icon !default;
+$disce-background-color: #eee !default;
+$disce-li-width: (30em / 14) !default;
+$disce-padding-width: (1em/3) !default;
+
+// Font-size
+$font-size-xs: 0.9rem;
+$font-size-sm: 1rem;
+$font-size-md: 1.1rem;
+$font-size-bg: 1.25rem;
+$font-size-lg: 1.5rem;
+
+.strong {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.hidden {
+	display: none;
+}

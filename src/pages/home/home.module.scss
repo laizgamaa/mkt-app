@@ -1,0 +1,114 @@
+@import "../../assets/styles/core/settings.global.scss";
+@import "../../assets/styles/core/settings.colors.scss";
+@import "../../assets/styles/core/settings.fonts.scss";
+
+.home {	
+	.section{
+		.section_info{
+			margin: 0 auto;
+			@media (min-width: 768px) {
+				text-align: center;
+				max-width: 50%;
+			}
+		}
+		.section_details{
+			display: flex;
+			justify-content: space-between;
+			max-width: 70%;
+    		margin: 0 auto;
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
+			.centered{
+				text-align: -webkit-center;
+			}
+		}
+		.section_title{
+			color: $color-white-default;
+			font-size: 2.5rem;
+		}
+		p{
+			color: $color-white-default;
+			font-size: 1.1rem;
+		}
+	}
+	.login_section{
+		max-width: 25%;
+		margin: 0 auto;
+		padding-bottom: 2rem;
+		@media (max-width: 1440px) {
+			max-width: 35%;
+		}
+		@media (max-width: 515px) {
+			max-width: 90%;
+		}
+		.section_white{
+			background-color: $color-white-default;
+			border-radius: 15px;
+		}
+		.login_buttons{
+			padding: 2rem 0;
+			.btn{
+				border-radius: 10px;
+				padding: .5rem;
+				background: $color-white-default;
+				text-align: center;
+				a{
+					width: 80%;
+				}
+			}
+		}
+		.middle {
+			width: 100%;
+			text-align: center;
+			justify-content: space-around;
+			display: flex;
+			margin-bottom: 1rem;
+			h1 {
+			  color: #fff;
+			}
+			input[type="radio"] {
+			  display: none;
+			  &:checked {
+				+ .box {
+				  background-color: rgb(173, 110, 202);
+				  span {
+					color: white;
+					&:before {
+					  opacity: 1;
+					}
+				  }
+				}
+			  }
+			}
+			.box {
+			  width: 150px;
+			  height: 150px;
+			  background-color: $color-white-default;
+			  box-shadow: 4px 4px 4px -2px $color-lightgrey-default;
+			  border-radius: 15px;
+			  transition: all 250ms ease;
+			  will-change: transition;
+			  display: inline-block;
+			  text-align: center;
+			  cursor: pointer;
+			  position: relative;
+			  font-weight: 900;
+			  span {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 25%;
+				font-size: 4rem;
+				user-select: none;
+				color: rgba(3, 7, 3, 0.315);
+				&:before {
+				  display: block;
+				  font-weight: normal;
+				  color: rgb(81, 4, 100);
+				}
+			  }
+			}
+		}
+	}
+}
